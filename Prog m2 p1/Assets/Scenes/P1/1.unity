@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6971dfed435d5b54882144bd850d61ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tower: {fileID: 4259084177516158675}
+  Tower: {fileID: 9156114376936103677, guid: d6dd8976033b0294c8626007a4296290, type: 3}
 --- !u!4 &141291116
 Transform:
   m_ObjectHideFlags: 0
@@ -546,17 +546,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: tower
       objectReference: {fileID: 0}
+    - target: {fileID: 9156114376936103677, guid: d6dd8976033b0294c8626007a4296290,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6dd8976033b0294c8626007a4296290, type: 3}
---- !u!1 &4259084177516158675 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9156114376936103677, guid: d6dd8976033b0294c8626007a4296290,
-    type: 3}
-  m_PrefabInstance: {fileID: 4259084177516158674}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

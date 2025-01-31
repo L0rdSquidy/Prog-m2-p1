@@ -2,8 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Brute : Enemy
+public class Brute : Enemy, IMovable, IDamagable
 {
+    public int Health
+    {
+         get { return health; }
+    }
     void Start()
     {
         health = 15;
@@ -14,7 +18,7 @@ public class Brute : Enemy
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
-            Healthcheck();
+            TakeDamage();
         }
     }
 }

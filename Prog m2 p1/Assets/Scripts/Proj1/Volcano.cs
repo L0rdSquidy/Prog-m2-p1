@@ -35,10 +35,6 @@ public class Volcano : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            // for (int i = 0; i < Eruption.Count; i++)
-            // {
-            //     Destroy(Eruption[i]);
-            // }
             while (Eruption.Count > 0)
             {
                 Destroy(Eruption[0]);
@@ -61,7 +57,7 @@ public class Volcano : MonoBehaviour
     {
         while (Eruption.Count > 0)
         {
-             Destroy(Eruption[0]);
+            Destroy(Eruption[0]);
             Eruption.Remove(Eruption[0]);
             yield return new WaitForSeconds(0.01f);
         }

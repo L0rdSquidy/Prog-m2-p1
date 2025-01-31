@@ -3,25 +3,29 @@ using System.Collections.Generic;
 using System.Drawing;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IMovable, IDamagable
 {
     public int health;
+    public int Health
+    {
+        get { return health; }
+    }
     public int speed;
     [SerializeField] GameObject PointB;
 
     // Update is called once per frame
     void Update()
     {
-       MoveON();
+       Move();
     }
 
-    public void MoveON()
+    public virtual void Move()
     {
         transform.position = Vector3.MoveTowards(transform.position, PointB.transform.position, speed * Time.deltaTime);
     }
     
 
-    public void Healthcheck()
+    public void TakeDamage()
     {
         health -= 1;
         if (health <= 0)
